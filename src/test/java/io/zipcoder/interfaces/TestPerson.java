@@ -3,6 +3,8 @@ package io.zipcoder.interfaces;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Optional;
+
 public class TestPerson {
     @Test
     public void personTest(){
@@ -28,5 +30,14 @@ public class TestPerson {
         Assert.assertEquals(expected,actual);
 
     }
+    @Test
+    public void idTestGet(){
+        Person person = new Person(19l);
+      Long actual = person.getId();
+        Long expected = 19l;
+        Assert.assertEquals(expected,actual);
+    }
+    // 1.0- 1.1 test done
+
 
 }
